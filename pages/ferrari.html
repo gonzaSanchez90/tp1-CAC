@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ferrari</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <script src="../js/acciones.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css2?family=B612&family=Lora:ital@1&family=Ubuntu&family=Vollkorn&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b6de76d563.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="ferrari">
+        <header>
+            <nav class="menu">
+                <label class="logo"><img src="../img/logo.png"></label>
+                <ul class="menu_items">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="active"><a href="ferrari.html">Ferrari</a></li>
+                    <li><a href="mcclaren.html">McClaren</a></li>
+                    <li><a href="aston-martin.html">Aston Martin</a></li>
+                    <li><a href="lamborghini.html">Lamborghini</a></li>
+                    <li><a href="porsche.html">Porsche</a></li>
+                    <li><a href="#" onclick="abrir_formulario();">Contacto</a></li>
+                </ul>
+                <span class="btn_menu">
+                    <i class="fas fa-caret-down"></i>
+                </span>
+            </nav>
+        </header>
+        <h1 class="ferrari-titulo">Ferrari 812</h1>
+        <p class="ferrari">
+            El Ferrari 812 Superfast es el heredero directo del primer Ferrari de la historia, el 125S. Aquel original Ferrari de 1947 ya llevaba motor V12 delantero atmosférico y su linaje llega hasta el presente y se encarna en este superdeportivo de 800 CV. Conducirlo es quererlo por su diseño, por su sonido, por su tacto y comportamiento y por la historia que llevas entre manos. Impresionante.
+        </p>
+        <div class="botones">
+            <input class="boton-ferrari" id="mostrar" name="Mostrar" onclick="mostrar();" type="button" value="Ver Galería de fotos">            
+        </div>
+        <main id="mostrarOcultar">
+            <div class="contenedor">
+                <div class="fila">
+                    <div class="columna1-3">
+                        <div class="small">
+                            <img alt="" src="../img/Ferrari/ferrari1.jpg">
+                        </div>
+                        <div class="small">
+                            <img alt="" src="../img/Ferrari/ferrari2.jpg">
+                        </div>
+                    </div>
+                    <div class="columna2-3">
+                        <div class="normal">
+                            <img alt="" src="../img/Ferrari/ferrari3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna2-3">
+                        <div class="fila">
+                            <div class="columna-50">
+                                <div class="small">
+                                    <img alt="" src="../img/Ferrari/ferrari7.jpg">
+                                </div>
+                                <div class="small">
+                                    <img alt="" src="../img/Ferrari/ferrari6.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="normal">
+                            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/khY1D0VAE-0" width="151.5%">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="columna1-3">
+                        <div class="small">
+                            <img alt="" src="../img/Ferrari/ferrari8.jpg">
+                        </div>
+                        <div class="small">
+                            <img alt="" src="../img/Ferrari/ferrari9.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="contenedor_formulario" onclick="abrir_formulario();">
+            <form id="formulario" action="" onsubmit="return cerrar_formulario()">
+                <h2>Contacto</h2>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="correo" placeholder="Correo">
+                <input type="text" name="telefono" placeholder="Telefono">
+                <textarea name="mensaje" placeholder="Escriba su mensaje">
+                </textarea>
+                <input type="submit" value="Enviar" id="boton2" >
+            </form>
+        </div>
+        <footer>
+            <div class="container-footer-all">
+                <div class="container-footer">
+                    <div class="colum1">
+                        <h1>Iinformación de la compañía</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="colum2">
+                        <h1>Redes Sociales</h1>
+                        <div class="row">
+                            <i class="fab fa-facebook"></i>
+                            <label>  Siguenos en Facebook</label>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-twitter"></i>
+                            <label>  Siguenos en twitter</label>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-instagram"></i>
+                            <label>  Siguenos en Instagram</label>
+                        </div>
+                    </div>
+                    <div class="colum3">
+                        <h1>Información Contacto</h1>
+                        <div class="row2">
+                            <i class="fas fa-home"></i>
+                            <label>La Pampa 4274, Chimbas - San Juan</label>
+                        </div>
+                        <div class="row2">
+                            <i class="fas fa-at"></i>
+                            <label>gonza.fede.sanchez@gmail.com</label>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="container-footer-bajo">
+                <div class="footer2">    
+                    <div class="copiryght">
+                        © 2020 Todos los derechos Reservados | <a href="">Gonzalo Sanchez</a>
+                    </div>
+                    <div class="politica">
+                        <a href="">Información Compañía</a> <a href="">Privacidad y Política</a><a href="">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
